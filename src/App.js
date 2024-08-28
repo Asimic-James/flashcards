@@ -111,9 +111,7 @@ const questions = [
     answer: "Functions are used to manage state, while Classes are used to manage state in a class-based component",
   },
 ];
-
-
-
+ 
 
 function Flashcards() {
 
