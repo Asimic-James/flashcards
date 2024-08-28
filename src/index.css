@@ -21,6 +21,19 @@ body {
   text-decoration: underline;
 }
 
+.description {
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: 400;
+} 
+
+.description p {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #050000;
+  font-weight: bold;
+}
+
 .flashcards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;

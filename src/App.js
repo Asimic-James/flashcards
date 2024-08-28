@@ -32,8 +32,8 @@ const questions = [
   },
   {
     id: 5,
-    question: "What's the name of the framework we use to build web applications?",
-    answer: "React framework",
+    question: "State the difference between Local and Global State",
+    answer: "Local state is data that is local to a component and global state is data that is shared across all components",
   },
   {
     id: 6,
@@ -52,8 +52,8 @@ const questions = [
   },
   {
     id: 9,
-    question: "What's the name of the function we use to handle user events in React?",
-    answer: "Event handling and user input",
+    question: "Explain Short Circuiting in React",
+    answer: "Short circuiting is a technique used to optimize the rendering of components in React, by skipping unnecessary renders.",
   },
   {
     id: 10,
@@ -62,13 +62,13 @@ const questions = [
   },
   {
     id: 11,
-    question: "What's the name of the function we use to manage routing in React?",
-    answer: "Routing and navigation",
+    question: "List the 3 states of Promise in React",
+    answer: "Pending, Fulfilled, and Rejected states",
   },
   {
     id: 12,
-    question: "What's the name of the function we use to manage data in React?",
-    answer: "Data management and storage",
+    question: "What do you understand by Async, Await, and Promises in React?",
+    answer: "Async and Await are used to handle asynchronous operations in React, while Promises are used to handle asynchronous operations in JavaScript",
   },
   {
     id: 13,
@@ -77,8 +77,8 @@ const questions = [
   },
   {
     id: 14,
-    question: "What's the name of the function we use to manage forms in React?",
-    answer: "Form management and validation",
+    question: "Major difference between Vanilla JS and React JS?",
+    answer: "Vanilla JS is used to build static websites, while React JS is used to build dynamic websites, applications, and web applications",
   },
   {
     id: 15,
@@ -123,7 +123,10 @@ function Flashcards() {
 
   return (
     <div className='flashcards'>
-      <h1 className='title'>React Flashcards</h1>
+      <span className='description'> 
+        <h1 className='title'>React Flashcards</h1>
+        <p>Ready to test your knowledge...?</p>
+      </span>
         {questions.map(question => (
           <div key={question.id} 
             onClick={() => handleClick(question.id)}
